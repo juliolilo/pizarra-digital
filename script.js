@@ -186,7 +186,7 @@ function drawImages() {
       ctx2.strokeRect(text.x, text.y, text.w, text.h);
       ctx2.beginPath();
       ctx2.beginPath();
-  ctx2.arc(text.x + text.w, text.y + text.h, 5, 0, 2 * Math.PI);
+    ctx2.arc(text.x + text.w, text.y + text.h, 5, 0, 2 * Math.PI);
     ctx2.fillStyle = "#0086FD";
     ctx2.fill();
     ctx2.stroke();
@@ -226,7 +226,7 @@ canvas2.addEventListener("click", function(e) {
 
 
 // ---------------------------
-var edicion = true;
+var edicion = false;
 console.log(edicion);
 document.getElementById("brush").addEventListener("click", () => {
 
@@ -417,7 +417,6 @@ function undo() {
     };
   }
 }
-
 
 
 
