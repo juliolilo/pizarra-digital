@@ -1,0 +1,104 @@
+body{
+  background-color: #333;
+}
+#canvas {
+  border: 1px solid white;
+  background-color: transparent;
+  /*height: 700px;
+  width: 700px;*/
+  margin-left: 30%;
+  position: absolute; left: 0; top: 0; z-index: 1; 
+  
+}
+
+#canvas2 {
+  border: 1px solid white;
+  background-color: #1c1c1c;
+  /*height: 700px;
+  width: 700px;*/
+  margin-left: 30%;
+  
+ 
+}
+
+#canvas3 {
+  border: 1px solid white;
+  background-color: transparent;
+  /*height: 700px;
+  width: 700px;*/
+  margin-left: 30%;
+  position: absolute; left: 0; top: 0; z-index: -10;
+  
+ 
+}
+
+
+
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #1c1c1c;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+button,
+input[type="range"],
+input[type="color"],
+input[type="file"] {
+display: block;
+margin: 10px 0;
+width: 80%;
+}
+
+.menu-btn {
+  background-color: #424242;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-btn:hover {
+  background-color: #5e5e5e;
+}
+
+.menu-separator {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.menu-label {
+  color: white;
+  margin: 5px 0;
+}
+
+.menu-input {
+  margin: 5px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.activo{
+  background-color:gainsboro;
+  border: 3px solid darkgreen;
+  border-radius: 3px;
+  transform: scale(1.05);
+  color: black;
+}

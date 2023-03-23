@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="menu">
+        <button id="brush" class="menu-btn">Pincel</button>
+        <button id="eraser" class="menu-btn">Goma</button>
+        <button onclick="undo()" class="menu-btn">Deshacer</button>
+
+        <div class="menu-separator"></div>
+        <label for="brush-size" class="menu-label">Tamaño del pincel:</label>
+        <input id="brush-size" type="range" min="1" max="200" step="1" class="menu-input">
+        <label for="eraser-size" class="menu-label">Tamaño de la goma:</label>
+        <input id="eraser-size" type="range" min="1" max="100" step="1" class="menu-input">
+        <label for="brush-color" class="menu-label">Color del pincel:</label>
+        <input id="brush-color" type="color" value="#000000" class="menu-input">
+        <div class="menu-separator"></div>
+        <label for="fileInput" class="menu-label" >Importar Imagen:</label>
+        <input type="file" id="imageLoader" name="imageLoader" onchange="loadImage()">
+  
+        <button id="add-text-btn" class="menu-btn">Añadir texto</button>
+        <label for="font-select" class="menu-label">Fuente:</label>
+        <select id="font-select" class="menu-input">
+          <option value="Arial">Arial</option>
+          <option value="Helvetica">Helvetica</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Monospace">Monospace</option>
+          <option value="Cursive">Cursive</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Fantasy"></option>
+          <option value="Tahoma ">Tahoma </option>
+          <option value="Impact ">Impact </option>
+          <option value="Georgia ">Georgia </option>
+          <option value="Palatino ">Palatino </option>
+          <option value="Baskerville ">Baskerville </option>
+        </select>
+  
+        <button id="download-button" class="menu-btn">Descargar Diseño</button>
+    </div>
+    
+	
+  <canvas id="canvas2" width="700" height="700"></canvas>
+   <canvas id="canvas" width="700" height="700"></canvas>
+  <canvas id="canvas3" width="700" height="700"></canvas>
+  
+  
+  
+	<br>
+	
+	<script src="script.js"></script>
+</body>
+</html>
