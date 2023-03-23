@@ -378,7 +378,10 @@ function downloadImage() {
   console.log(clickedText);
   console.log(selectedImage);
   clickedText = null;
-  selectedImage.isSelected = false;
+  if(selectedImage){
+    selectedImage.isSelected = false;
+  }
+  
   selectedText = null;
  
   //selectedImage.isSelected = false;
