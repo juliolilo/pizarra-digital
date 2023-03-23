@@ -186,7 +186,7 @@ function drawImages() {
       ctx2.strokeRect(text.x, text.y, text.w, text.h);
       ctx2.beginPath();
       ctx2.beginPath();
-    ctx2.arc(text.x + text.w, text.y + text.h, 5, 0, 2 * Math.PI);
+  ctx2.arc(text.x + text.w, text.y + text.h, 5, 0, 2 * Math.PI);
     ctx2.fillStyle = "#0086FD";
     ctx2.fill();
     ctx2.stroke();
@@ -378,9 +378,10 @@ function downloadImage() {
   console.log(clickedText);
   console.log(selectedImage);
   clickedText = null;
-  
-  //selectedImage.isDragging = false;
   selectedImage.isSelected = false;
+  selectedText = null;
+ 
+  //selectedImage.isSelected = false;
   console.log(clickedText);
   console.log(selectedImage);
   drawImages();
